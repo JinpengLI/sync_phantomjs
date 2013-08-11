@@ -49,7 +49,7 @@ page.onResourceReceived = function(response) {
 
 
 var steps = [
-  //0. load brand page
+  //0. load main page
   function(){
     //Load Login Page
     page.open(page_url);
@@ -58,7 +58,7 @@ var steps = [
     set_ret['next'] = 1;
     return set_ret;
   },
-  //1. click and get promo code
+  //1. click to verify the login and password
   function() {
     page.evaluate(function(strlogin, strpw) {
     	var ev = document.createEvent("MouseEvent");
